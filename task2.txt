@@ -1,0 +1,63 @@
+1.List 5 difference between Browser JS(console) v Nodejs
+
+    A.Browser JS(console)
+    * Window is a predefined global object which has functions and attributes, that have to deal with window that has been drawn.
+    * Location is another predefined object in browsers, that has all the information about the url we have loaded.
+    * Document, which is another predefined  global variable in browsers, has the html is rendered.
+    * Browsers may have an object named "global",but it will be the exact one as Window.
+    * Browsers don't have "require" predefined. You may include it in your app for asynchronous file loading. 
+
+   B.Nodejs
+    * Node doesn't have predefined Window object cause it doesn't have window to drawn anything.
+    * Location object is related to particular url, that means it is for page specific. So node doesn't require that.
+    * Node doesn't have a document object also, cause it never have to render anything in a page. 
+    * Node has "global", which is a predefined global object. It contains several functions that are not available in browsers, cause 
+       they are needed for server side works only.
+    * "require" object is predefined in Node which is used to include modules in the app.
+
+2.Watch & Summary 5 points 
+    * Parsing HTML
+        a.Parsing isn't straight forward
+        b.Can be halted.
+        c.Will do speculative parsing
+        d.It's reentrant
+    * <script>,<link>&<style>
+        a.Will halt the parser as a script can alter the document.
+        b.Network latency.
+        c.link & style could halt JS execution.
+    *  CSS Parsing
+        a.It will create css object model, like the DOM object model, basically it's a representation of your styles, you
+           have a style sheet rules, selectors,decorations and so on.
+        b.Render frame Tree
+           CSS object model and that will go into and create what's called the render or the frame tree.
+    * DOM to CSSOM
+       Combines the two object models, style resolution this is the actual representation of what will show on screen.
+    * Multiple Trees
+       a.Render objects
+       b.Render styles
+       c.Render layers
+       d.Line boxes
+
+4.Execute the below code and write your description in txt file
+   a.typeof(1) - Number
+   b.typeof(1.1) - Number
+   c.typeof('1.1') - String
+   d.typeof(true) - Boolean
+   e.typeof(null) - Object
+   f.typeof(undefined) - Undefined
+   g.typeof([]) - Object
+   h.typeof({}) - Object
+   i.typeof(NaN) - Number
+
+5.Read what is prototype
+   * Prototypes are the mechanism by which JavaScript objects inherit features from one another. we explain how  
+      prototype chains work and look at how the prototype property can be used to add methods to existing constructors.
+   * JavaScript is often described as a prototype-based language to provide inheritance, objects can have a prototype 
+      object, which acts as a template object that it inherits methods and properties from.
+   * An object's prototype object may also have a prototype object, which it inherits methods and properties from, and so on. 
+      This is often referred to as a prototype chain.
+
+
+
+
+
